@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(errorHandler);
 
-app.use("/user", require("./routes/user"));
-app.use("/blog", require("./routes/blog"));
+app.use("/api/user", require("./routes/user"));
+app.use("/api/blog", require("./routes/blog"));
 
 app.listen(port, () => console.log(`server listening on ${port}`));
