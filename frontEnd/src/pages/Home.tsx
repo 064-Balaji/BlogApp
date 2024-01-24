@@ -19,18 +19,20 @@ const Home = () => {
     };
     dataFetch();
   }, []);
+
   return (
     <div>
       <h4 className="text-center">All Blogs</h4>
       <div className="d-grid">
-        {blogs.map((val: any) => (
-          <Blog
-            title={val.title}
-            content={val.content}
-            email={val.email}
-            key={val.title}
-          />
-        ))}
+        {blogs.length !== 0 &&
+          blogs.map((val: any) => (
+            <Blog
+              title={val.title}
+              content={val.content}
+              email={val.email}
+              key={val.title}
+            />
+          ))}
       </div>
     </div>
   );

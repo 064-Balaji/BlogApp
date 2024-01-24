@@ -55,14 +55,15 @@ const User = () => {
         <h4 className="text-center">My Blogs</h4>
 
         <div className="d-grid">
-          {blog.map((val: any) => (
-            <Blog
-              title={val.title}
-              content={val.content}
-              email={val.email}
-              key={val.title}
-            />
-          ))}
+          {blog.length !== 0 &&
+            blog.map((val: any) => (
+              <Blog
+                title={val.title}
+                content={val.content}
+                email={val.email}
+                key={val.title}
+              />
+            ))}
         </div>
       </div>
       <div className="container">
