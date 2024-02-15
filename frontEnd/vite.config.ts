@@ -6,7 +6,7 @@ export default {
   plugins: [react()],
   server: {
     proxy: {
-      "/api": "https://blogapp-api-73a6.onrender.com",
+      "/api": "https://blogapp-api-73a6.onrender.com/api",
     },
   },
 };
