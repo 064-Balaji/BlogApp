@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     const dataFetch = async () => {
-      await axios.get("/api/blog/").then((response) => {
+      await axios.get("/api/api/  blog/").then((response) => {
         setBlogs(response.data);
       });
     };
