@@ -10,6 +10,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(errorHandler);
 
+app.use(express.static("dist"));
+
 app.use("/api/user", require("./routes/user"));
 app.use("/api/blog", require("./routes/blog"));
 
